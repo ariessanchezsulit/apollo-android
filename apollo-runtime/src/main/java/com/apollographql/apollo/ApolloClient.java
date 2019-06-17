@@ -292,7 +292,13 @@ public final class ApolloClient implements ApolloQueryCall.Factory, ApolloMutati
     long subscriptionHeartbeatTimeout = -1;
     boolean useHttpGetMethodForQueries;
 
-    Builder() {
+    public String testParam;
+
+    public Builder() {
+    }
+
+    public Builder(String testParam) {
+      this.testParam = testParam;
     }
 
     /**
